@@ -1,2 +1,8 @@
+include ':features:about'
+include ':features:home'
+include ':features:settings'
+include ':db'
+include ':repository'
+include ':core'
 include ':app'
 rootProject.name = "ArchitectureOverview"
