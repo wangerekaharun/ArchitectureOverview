@@ -15,12 +15,17 @@
     <action
         android:id="@+id/action_homeFragment_toAboutFragment"
         app:destination="@id/aboutFragment"/>
+    <action
+        android:id="@+id/action_homeFragment_toUsersFragment"
+        app:destination="@id/users_nav_graph"/>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="ke.co.appslab.about.views.AboutFragment"
         app:moduleName="about"
         android:label="AboutFragment"
         tools:layout="@layout/fragment_about"/>
+
+    <include app:graph="@navigation/users_nav_graph"/>
 
 
 </navigation>

@@ -22,4 +22,14 @@
         android:textColor="@android:color/white"
         android:textSize="22sp"/>
 
+    <Button
+        android:id="@+id/btnToUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/btnToAbout"
+        android:text="Go to Users"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"/>
+
 </RelativeLayout>

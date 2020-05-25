@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: "androidx.navigation.safeargs"
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
 android {
     compileSdkVersion 29
 
@@ -30,6 +33,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
     dynamicFeatures = [':features:home', ':features:about', ':features:settings']
 }
 
@@ -50,7 +57,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel:2.2.0"
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     api project(":core")
+    implementation project(":features:users")
     api 'com.google.android.play:core:1.6.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
 
 }

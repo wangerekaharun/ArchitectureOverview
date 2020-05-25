@@ -30,6 +30,13 @@ public class HomeFragment extends Fragment {
         homeBinding.btnToAbout.setOnClickListener(v -> {
             NavDirections navDirections = HomeFragmentDirections.actionHomeFragmentToAboutFragment();
             Navigation.findNavController(v).navigate(navDirections);
+
         });
+
+        homeBinding.btnToUsers.setOnClickListener(v ->{
+            NavDirections navDirections = HomeFragmentDirections.actionHomeFragmentToUsersFragment();
+            Navigation.findNavController(v).navigate(navDirections);
+        });
+
     }
 }

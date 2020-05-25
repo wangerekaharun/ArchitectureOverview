@@ -1,3 +1,4 @@
+include ':features:users'
 include ':features:about'
 include ':features:home'
 include ':features:settings'
